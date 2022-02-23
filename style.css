@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-size: 6vh;
+  margin: 10%;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: whitesmoke;
+}
+
+ol {
+  font-size: 2vh;
+  font-family: "Courier New", Courier, monospace;
+  display: block;
+  width: 30vw;
+  height: max-content;
+  margin: 1rem;
+  top: 50vh;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  position: relative;
+  width: 30vw;
+  height: max-content;
+  display: inline-block;
+  overflow: visible;
+  margin: 1rem;
+}
+
+img {
+  width: 100%;
+  transition: all linear 0.7s;
+}
+
+img.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.box:hover img {
+  opacity: 0;
+}
+
+.box:hover img.hover-img {
+  opacity: 1;
+}
